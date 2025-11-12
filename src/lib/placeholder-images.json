@@ -1,3 +1,28 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "project-1",
+      "description": "A placeholder image for the first project.",
+      "imageUrl": "https://images.unsplash.com/photo-1624298696100-a6aae4884881?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx0ZWNoJTIwY29kZXxlbnwwfHx8fDE3NjI4NTUzOTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tech code"
+    },
+    {
+      "id": "project-2",
+      "description": "A placeholder image for the second project.",
+      "imageUrl": "https://images.unsplash.com/photo-1644088379091-d574269d422f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGRhdGF8ZW58MHx8fHwxNzYyODkyMTkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract data"
+    },
+    {
+      "id": "project-3",
+      "description": "A placeholder image for the third project.",
+      "imageUrl": "https://images.unsplash.com/photo-1655993810480-c15dccf9b3a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmdXR1cmlzdGljJTIwbmV0d29ya3xlbnwwfHx8fDE3NjI5MTQwNDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "futuristic network"
+    },
+    {
+      "id": "profile-pic",
+      "description": "A placeholder profile picture for Raj Kumar.",
+      "imageUrl": "https://images.unsplash.com/photo-1692197393247-c76e1bd8f29e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYWxlJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYyOTA1MzMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "male portrait"
+    }
+  ]
 }
