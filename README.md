@@ -3,8 +3,8 @@
 ## 📥 HOW TO DOWNLOAD THIS PROJECT
 To download this entire project as a ZIP file from Firebase Studio:
 1. Look at the **File Explorer** on the left side of your screen.
-2. Find the root folder (the top-most folder in the list).
-3. **Right-click** on that folder.
+2. The **root folder** is the very first folder at the top of the list (it contains `src`, `package.json`, etc.).
+3. **Right-click** on that top-most folder.
 4. Select **Download**.
 
 ---
