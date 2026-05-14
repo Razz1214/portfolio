@@ -61,6 +61,7 @@ export const projects: Project[] = [
     technologies: ['HTML', 'CSS', 'JavaScript', 'QR APIs'],
     imageId: 'project-bhojnalaya',
     githubUrl: 'https://github.com/Razz1214/Bhojanalaya',
+    liveUrl: 'https://bhojnalayaapp.netlify.app/',
   },
 ];
 
