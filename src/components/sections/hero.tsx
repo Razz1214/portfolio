@@ -30,10 +30,10 @@ export default function Hero() {
             <h1 className="font-headline text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
               Hi, I&apos;m <span className="text-primary">Raj Kumar</span>
             </h1>
-            <p className="text-lg text-muted-foreground md:text-xl max-w-[600px] leading-relaxed">
+            <p className="text-lg text-muted-foreground md:text-xl max-w-[600px] leading-relaxed px-4 md:px-0">
               Passionate Computer Science student with expertise in full-stack web development, machine learning, and UI/UX. Smart India Hackathon 2025 Finalist.
             </p>
-            <div className="flex flex-col gap-4 sm:flex-row w-full sm:w-auto">
+            <div className="flex flex-col gap-4 sm:flex-row w-full sm:w-auto px-4 md:px-0">
               <Button size="lg" asChild className="rounded-full px-8 shadow-md w-full sm:w-auto">
                 <Link href="#projects">
                   <ArrowDown className="mr-2 h-5 w-5" />
@@ -49,9 +49,9 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Profile Image - Responsive positioning and size */}
-          <div className="relative flex justify-center order-1 md:order-2 lg:pr-12 animate-in fade-in slide-in-from-right duration-1000">
-            <div className="relative aspect-square w-full max-w-[280px] sm:max-w-[350px] md:max-w-[420px] overflow-hidden rounded-full shadow-2xl border-4 border-white/10 ring-8 ring-primary/5">
+          {/* Profile Image */}
+          <div className="relative flex justify-center order-1 md:order-2 animate-in fade-in slide-in-from-right duration-1000">
+            <div className="relative aspect-square w-[70%] max-w-[280px] sm:max-w-[320px] md:max-w-[420px] overflow-hidden rounded-full shadow-2xl border-4 border-white/10 ring-8 ring-primary/5">
               <Image
                 src={imgSrc}
                 alt="Raj Kumar Profile"
