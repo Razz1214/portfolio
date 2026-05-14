@@ -48,7 +48,7 @@ export default function Hero() {
             </div>
           </div>
           <div className="relative flex justify-center md:justify-end animate-in fade-in slide-in-from-right duration-1000">
-            <div className="relative aspect-[4/5] w-full max-w-[420px] overflow-hidden rounded-2xl shadow-2xl border-4 border-white ring-8 ring-primary/5">
+            <div className="relative aspect-square w-full max-w-[300px] overflow-hidden rounded-full shadow-2xl border-4 border-white ring-8 ring-primary/5">
               <Image
                 src={imgSrc}
                 alt="Raj Kumar Profile"
@@ -58,7 +58,6 @@ export default function Hero() {
                 priority
                 unoptimized
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
             </div>
           </div>
         </div>
