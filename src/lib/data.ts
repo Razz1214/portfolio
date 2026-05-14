@@ -113,7 +113,7 @@ export const experiences: Experience[] = [
 
 export const socialLinks = {
   github: 'https://github.com',
-  linkedin: 'https://linkedin.com/in',
+  linkedin: 'https://www.linkedin.com/in/raj-kumar-0b5013290/',
   leetcode: 'https://leetcode.com',
   email: 'kumarazz7549@gmail.com',
   phone: '6204001281',
