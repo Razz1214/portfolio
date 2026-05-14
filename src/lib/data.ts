@@ -10,25 +10,29 @@ import {
   Smartphone,
   Trophy,
   GraduationCap,
-  Users
+  Users,
+  Layout,
+  Server,
+  Layers
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
 export type Skill = {
   name: string;
   level: number;
+  category: 'Languages' | 'Core CS' | 'Web & Backend' | 'AI & Specialized';
   Icon: LucideIcon;
 };
 
 export const skills: Skill[] = [
-  { name: 'Python', level: 90, Icon: Code },
-  { name: 'Java & C/C++', level: 85, Icon: Terminal },
-  { name: 'REST APIs & Web', level: 80, Icon: Globe },
-  { name: 'SQL & Supabase', level: 75, Icon: Database },
-  { name: 'ML & AI', level: 70, Icon: BrainCircuit },
-  { name: 'Data Structures', level: 85, Icon: Cpu },
-  { name: 'Security & Auth', level: 70, Icon: ShieldCheck },
-  { name: 'UI/UX Design', level: 75, Icon: Smartphone },
+  { name: 'Python', level: 90, category: 'Languages', Icon: Code },
+  { name: 'Java & C/C++', level: 85, category: 'Languages', Icon: Terminal },
+  { name: 'Data Structures', level: 85, category: 'Core CS', Icon: Cpu },
+  { name: 'REST APIs & Web', level: 80, category: 'Web & Backend', Icon: Globe },
+  { name: 'SQL & Supabase', level: 75, category: 'Web & Backend', Icon: Database },
+  { name: 'Security & Auth', level: 70, category: 'Web & Backend', Icon: ShieldCheck },
+  { name: 'ML & AI', level: 70, category: 'AI & Specialized', Icon: BrainCircuit },
+  { name: 'UI/UX Design', level: 75, category: 'AI & Specialized', Icon: Smartphone },
 ];
 
 export type Project = {
