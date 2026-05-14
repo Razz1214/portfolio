@@ -1,5 +1,17 @@
-
-import { Code, Database, BrainCircuit, Bot, Laptop, Cpu, GitBranch, Linkedin, Github, Utensils } from 'lucide-react';
+import { 
+  Code, 
+  Database, 
+  BrainCircuit, 
+  Bot, 
+  Globe, 
+  Cpu, 
+  Terminal, 
+  ShieldCheck, 
+  Smartphone,
+  Trophy,
+  GraduationCap,
+  Users
+} from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
 export type Skill = {
@@ -9,12 +21,14 @@ export type Skill = {
 };
 
 export const skills: Skill[] = [
-  { name: 'React & Next.js', level: 85, Icon: Laptop },
   { name: 'Python', level: 90, Icon: Code },
-  { name: 'SQL & Databases', level: 80, Icon: Database },
-  { name: 'Machine Learning', level: 75, Icon: BrainCircuit },
-  { name: 'AI & LLMs', level: 70, Icon: Bot },
+  { name: 'Java & C/C++', level: 85, Icon: Terminal },
+  { name: 'REST APIs & Web', level: 80, Icon: Globe },
+  { name: 'SQL & Supabase', level: 75, Icon: Database },
+  { name: 'ML & AI', level: 70, Icon: BrainCircuit },
   { name: 'Data Structures', level: 85, Icon: Cpu },
+  { name: 'Security & Auth', level: 70, Icon: ShieldCheck },
+  { name: 'UI/UX Design', level: 75, Icon: Smartphone },
 ];
 
 export type Project = {
@@ -28,32 +42,31 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: 'Swasthya',
+    description: 'A secure health record platform with dual-key access, teleconsultation, and data anonymization. Smart India Hackathon 2025 Finalist.',
+    technologies: ['Full-Stack', 'Blockchain', 'Healthtech'],
+    imageId: 'project-swasthya',
+    githubUrl: 'https://github.com/raj-kumar/swasthya',
+  },
+  {
+    title: 'Deepfake Detection System',
+    description: 'CNN-based model using TensorFlow and OpenCV to classify manipulated media with high precision and F1-score.',
+    technologies: ['Python', 'TensorFlow', 'OpenCV', 'ML'],
+    imageId: 'project-deepfake',
+    githubUrl: 'https://github.com/raj-kumar/deepfake-detection',
+  },
+  {
     title: 'Bhojnalaya',
-    description: 'An innovative campus dining platform that streamlines food ordering, menu management, and digital billing for university cafeterias.',
-    technologies: ['Next.js', 'Firebase', 'Tailwind CSS', 'Genkit'],
-    imageId: 'project-1',
+    description: 'QR-based billing system designed to prevent UPI fraud in campus dining. Winner of PCU Project Expo 2024.',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'QR APIs'],
+    imageId: 'project-bhojnalaya',
     githubUrl: 'https://github.com/raj-kumar/bhojnalaya',
-    liveUrl: '#',
-  },
-  {
-    title: 'AI Support Companion',
-    description: 'An intelligent chatbot designed to assist students with campus-related queries using natural language processing.',
-    technologies: ['Python', 'LangChain', 'Gemini AI', 'Firebase'],
-    imageId: 'project-2',
-    githubUrl: 'https://github.com/raj-kumar/ai-companion',
-  },
-  {
-    title: 'Portfolio Analytics',
-    description: 'A data-driven dashboard for tracking student project engagement and performance metrics.',
-    technologies: ['React', 'Recharts', 'PostgreSQL'],
-    imageId: 'project-3',
-    githubUrl: 'https://github.com/raj-kumar/analytics-dashboard',
     liveUrl: '#',
   },
 ];
 
 export type Experience = {
-  type: 'Education' | 'Work';
+  type: 'Education' | 'Award' | 'Leadership';
   title: string;
   organization: string;
   date: string;
@@ -65,28 +78,36 @@ export const experiences: Experience[] = [
     type: 'Education',
     title: 'B.Tech in Computer Science & Engineering',
     organization: 'Pimpri Chinchwad University',
-    date: '2021 - Present',
-    description: 'Third-year student focusing on software engineering principles, algorithms, and AI/ML applications.',
+    date: 'Aug 2023 - 2027',
+    description: 'Current CGPA: 7.5. Coursework: AI/ML, DSA, DBMS, OOPs, OS, Web Technologies.',
   },
   {
-    type: 'Work',
-    title: 'Software Intern',
-    organization: 'Local Tech Startup',
-    date: 'Summer 2023',
-    description: 'Developed frontend components for a food-tech startup, focusing on responsive design and performance.',
+    type: 'Award',
+    title: 'Smart India Hackathon 2025 Finalist',
+    organization: 'Government of India',
+    date: '2025',
+    description: 'Built SWASTHYA, an online health management ecosystem with blockchain and AI integration.',
   },
   {
-    type: 'Education',
-    title: 'Higher Secondary School',
-    organization: 'City Pride School',
-    date: '2019 - 2021',
-    description: 'Excelled in Science and Mathematics, building a strong foundation for engineering.',
+    type: 'Award',
+    title: 'PCU Project Expo Runner-Up',
+    organization: 'Pimpri Chinchwad University',
+    date: '2024',
+    description: 'Recognized among 50+ selected projects for the Bhojnalaya campus scale web solution.',
+  },
+  {
+    type: 'Leadership',
+    title: 'Kridarambh Sports Organizer',
+    organization: 'University Level',
+    date: '2025 - 2026',
+    description: 'Managed registrations, scheduling, and execution for the Carrom Tournament.',
   },
 ];
 
 export const socialLinks = {
   github: 'https://github.com',
   linkedin: 'https://linkedin.com/in',
+  leetcode: 'https://leetcode.com',
 };
 
 export const navLinks = [

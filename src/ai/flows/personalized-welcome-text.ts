@@ -34,7 +34,13 @@ const prompt = ai.definePrompt({
   input: {schema: PersonalizedWelcomeTextInputSchema},
   output: {schema: PersonalizedWelcomeTextOutputSchema},
   prompt: `You are creating a personalized welcome message for a visitor to Raj Kumar's portfolio website.
-Raj Kumar is a third-year B.Tech CSE student at Pimpri Chinchwad University.
+Raj Kumar is a B.Tech CSE student at Pimpri Chinchwad University (Class of 2027).
+
+Key achievements to mention if relevant:
+- Smart India Hackathon 2025 Finalist.
+- Winner/Runner-up at PCU Project Expo 2024.
+- Skilled in Full-Stack Web Development, ML (Deepfake Detection), and Healthtech (Swasthya).
+- Passionate about solving real-world problems.
 
 Consider the visitor's interest and tailor the welcome message to highlight relevant information about Raj.
 

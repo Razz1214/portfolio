@@ -1,22 +1,22 @@
 {
   "placeholderImages": [
     {
-      "id": "project-1",
-      "description": "Bhojnalaya - Campus dining experience platform.",
+      "id": "project-swasthya",
+      "description": "Healthcare record platform visualization.",
+      "imageUrl": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwdGVjaG5vbG9neXxlbnwwfHx8fDE3NjI4OTIxOTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "medical technology"
+    },
+    {
+      "id": "project-deepfake",
+      "description": "AI Deepfake detection system interface.",
+      "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlfGVufDB8fHx8MTc2Mjg5MjE5MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "artificial intelligence"
+    },
+    {
+      "id": "project-bhojnalaya",
+      "description": "QR based billing and dining platform.",
       "imageUrl": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkaW5pbmclMjByZXN0YXVyYW50fGVufDB8fHx8MTc2Mjg5MjE5MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "dining restaurant"
-    },
-    {
-      "id": "project-2",
-      "description": "AI Chatbot Assistant interface.",
-      "imageUrl": "https://images.unsplash.com/photo-1644088379091-d574269d422f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGRhdGF8ZW58MHx8fHwxNzYyODkyMTkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "abstract data"
-    },
-    {
-      "id": "project-3",
-      "description": "Data Analysis Dashboard with charts.",
-      "imageUrl": "https://images.unsplash.com/photo-1655993810480-c15dccf9b3a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmdXR1cmlzdGljJTIwbmV0d29ya3xlbnwwfHx8fDE3NjI5MTQwNDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "futuristic network"
     },
     {
       "id": "profile-pic",
