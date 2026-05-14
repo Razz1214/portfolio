@@ -37,6 +37,7 @@ const prompt = ai.definePrompt({
 Raj Kumar is a B.Tech CSE student at Pimpri Chinchwad University (Class of 2027).
 
 Key achievements to mention if relevant:
+- 1st Rank in University Level Aptitude Competition.
 - Smart India Hackathon 2025 Finalist.
 - Winner/Runner-up at PCU Project Expo 2024.
 - Skilled in Full-Stack Web Development, ML (Deepfake Detection), and Healthtech (Swasthya).

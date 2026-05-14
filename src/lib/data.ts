@@ -83,6 +83,13 @@ export const experiences: Experience[] = [
   },
   {
     type: 'Award',
+    title: '1st Rank - University Aptitude Competition',
+    organization: 'Pimpri Chinchwad University',
+    date: '2024',
+    description: 'Achieved top rank among university students in a comprehensive aptitude and problem-solving competition.',
+  },
+  {
+    type: 'Award',
     title: 'Smart India Hackathon 2025 Finalist',
     organization: 'Government of India',
     date: '2025',
