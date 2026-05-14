@@ -1,6 +1,5 @@
 import Header from "@/components/layout/header";
 import Hero from "@/components/sections/hero";
-import PersonalizationTool from "@/components/sections/personalization-tool";
 import Projects from "@/components/sections/projects";
 import Skills from "@/components/sections/skills";
 import Experience from "@/components/sections/experience";
@@ -13,7 +12,6 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
-        <PersonalizationTool />
         <Projects />
         <Skills />
         <Experience />
