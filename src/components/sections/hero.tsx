@@ -15,7 +15,23 @@ export default function Hero() {
     <section id="home" className="relative w-full py-20 md:py-32 overflow-hidden bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
-          <div className="flex flex-col items-start space-y-6 animate-in fade-in slide-in-from-left duration-1000">
+          {/* Profile Image (Now on the left) */}
+          <div className="relative flex justify-center md:justify-start animate-in fade-in slide-in-from-left duration-1000 order-1 md:order-1">
+            <div className="relative aspect-square w-full max-w-[280px] overflow-hidden rounded-full shadow-2xl border-4 border-white/10 ring-8 ring-primary/5">
+              <Image
+                src={imgSrc}
+                alt="Raj Kumar Profile"
+                fill
+                className="object-cover object-[25%_center] transition-transform duration-700 hover:scale-110"
+                data-ai-hint={placeholder?.imageHint || 'man suit'}
+                priority
+                unoptimized
+              />
+            </div>
+          </div>
+
+          {/* Intro Text (Now on the right) */}
+          <div className="flex flex-col items-start space-y-6 animate-in fade-in slide-in-from-right duration-1000 order-2 md:order-2">
             <div className="flex flex-wrap gap-2 mb-2">
               <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-primary/10 text-primary">
                 <User className="mr-1 h-3 w-3" />
@@ -45,19 +61,6 @@ export default function Hero() {
                   GitHub Profile
                 </Link>
               </Button>
-            </div>
-          </div>
-          <div className="relative flex justify-center md:justify-end animate-in fade-in slide-in-from-right duration-1000">
-            <div className="relative aspect-square w-full max-w-[280px] overflow-hidden rounded-full shadow-2xl border-4 border-white/10 ring-8 ring-primary/5">
-              <Image
-                src={imgSrc}
-                alt="Raj Kumar Profile"
-                fill
-                className="object-cover object-[25%_center] transition-transform duration-700 hover:scale-110"
-                data-ai-hint={placeholder?.imageHint || 'man suit'}
-                priority
-                unoptimized
-              />
             </div>
           </div>
         </div>
