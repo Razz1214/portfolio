@@ -49,9 +49,9 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Profile Image */}
-          <div className="relative flex justify-center md:justify-end animate-in fade-in slide-in-from-right duration-1000">
-            <div className="relative aspect-square w-full max-w-[280px] overflow-hidden rounded-full shadow-2xl border-4 border-white/10 ring-8 ring-primary/5">
+          {/* Profile Image - Adjusted positioning */}
+          <div className="relative flex justify-center md:justify-center lg:pr-12 animate-in fade-in slide-in-from-right duration-1000">
+            <div className="relative aspect-square w-full max-w-[240px] overflow-hidden rounded-full shadow-2xl border-4 border-white/10 ring-8 ring-primary/5">
               <Image
                 src={imgSrc}
                 alt="Raj Kumar Profile"
