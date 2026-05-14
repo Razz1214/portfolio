@@ -12,7 +12,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import { submitContactForm, ContactFormState } from '@/lib/actions';
 import { useToast } from '@/hooks/use-toast';
-import { Send, Loader2, Mail, Phone } from 'lucide-react';
+import { Send, Loader2, Mail, Phone, Github, Linkedin } from 'lucide-react';
 import { socialLinks } from '@/lib/data';
 
 const contactSchema = z.object({
@@ -76,7 +76,7 @@ export default function Contact() {
             <p className="max-w-[600px] text-muted-foreground md:text-xl">
               I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of an amazing team. Feel free to reach out.
             </p>
-            <div className="space-y-4 pt-4">
+            <div className="space-y-6 pt-4">
                 <div className="flex items-center gap-3">
                     <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
                         <Mail className="h-5 w-5" />
@@ -96,6 +96,28 @@ export default function Contact() {
                         <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider">Phone</p>
                         <a href={`tel:+91${socialLinks.phone}`} className="text-lg font-semibold hover:text-primary transition-colors">
                             +91 {socialLinks.phone}
+                        </a>
+                    </div>
+                </div>
+                <div className="flex items-center gap-3">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
+                        <Linkedin className="h-5 w-5" />
+                    </div>
+                    <div>
+                        <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider">LinkedIn</p>
+                        <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold hover:text-primary transition-colors">
+                            Raj Kumar
+                        </a>
+                    </div>
+                </div>
+                <div className="flex items-center gap-3">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
+                        <Github className="h-5 w-5" />
+                    </div>
+                    <div>
+                        <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider">GitHub</p>
+                        <a href={socialLinks.github} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold hover:text-primary transition-colors">
+                            raj-kumar
                         </a>
                     </div>
                 </div>
