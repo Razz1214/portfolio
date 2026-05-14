@@ -2,37 +2,50 @@ import {
   Code, 
   Database, 
   BrainCircuit, 
-  Bot, 
   Globe, 
   Cpu, 
   Terminal, 
   ShieldCheck, 
   Smartphone,
-  Trophy,
-  GraduationCap,
-  Users,
   Layout,
+  Atom,
+  Braces,
+  FileCode,
   Server,
-  Layers
+  Layers,
+  Palette
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
 export type Skill = {
   name: string;
   level: number;
-  category: 'Languages' | 'Core CS' | 'Web & Backend' | 'AI & Specialized';
+  category: 'Languages' | 'Core CS' | 'Web Development' | 'AI & Specialized';
   Icon: LucideIcon;
 };
 
 export const skills: Skill[] = [
+  // Languages
   { name: 'Python', level: 90, category: 'Languages', Icon: Code },
-  { name: 'Java & C/C++', level: 85, category: 'Languages', Icon: Terminal },
+  { name: 'JavaScript (ES6+)', level: 85, category: 'Languages', Icon: FileCode },
+  { name: 'Java & C/C++', level: 80, category: 'Languages', Icon: Terminal },
+  
+  // Core CS
   { name: 'Data Structures', level: 85, category: 'Core CS', Icon: Cpu },
-  { name: 'REST APIs & Web', level: 80, category: 'Web & Backend', Icon: Globe },
-  { name: 'SQL & Supabase', level: 75, category: 'Web & Backend', Icon: Database },
-  { name: 'Security & Auth', level: 70, category: 'Web & Backend', Icon: ShieldCheck },
-  { name: 'ML & AI', level: 70, category: 'AI & Specialized', Icon: BrainCircuit },
-  { name: 'UI/UX Design', level: 75, category: 'AI & Specialized', Icon: Smartphone },
+  { name: 'Algorithm Design', level: 80, category: 'Core CS', Icon: Layers },
+  { name: 'Operating Systems', level: 75, category: 'Core CS', Icon: Server },
+
+  // Web Development
+  { name: 'React.js & Next.js', level: 85, category: 'Web Development', Icon: Atom },
+  { name: 'HTML5 & CSS3', level: 90, category: 'Web Development', Icon: Layout },
+  { name: 'Tailwind CSS', level: 90, category: 'Web Development', Icon: Palette },
+  { name: 'Node.js & Express', level: 75, category: 'Web Development', Icon: Braces },
+  { name: 'SQL & Supabase', level: 80, category: 'Web Development', Icon: Database },
+  { name: 'Security & Auth', level: 75, category: 'Web Development', Icon: ShieldCheck },
+  
+  // AI & Specialized
+  { name: 'ML & Deep Learning', level: 75, category: 'AI & Specialized', Icon: BrainCircuit },
+  { name: 'UI/UX Design', level: 80, category: 'AI & Specialized', Icon: Smartphone },
 ];
 
 export type Project = {
