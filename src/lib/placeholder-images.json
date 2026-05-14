@@ -2,7 +2,7 @@
   "placeholderImages": [
     {
       "id": "project-1",
-      "description": "Bhojnalaya - A dining experience platform.",
+      "description": "Bhojnalaya - Campus dining experience platform.",
       "imageUrl": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkaW5pbmclMjByZXN0YXVyYW50fGVufDB8fHx8MTc2Mjg5MjE5MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "dining restaurant"
     },
@@ -20,7 +20,7 @@
     },
     {
       "id": "profile-pic",
-      "description": "Raj Kumar in a professional blue suit.",
+      "description": "Raj Kumar in a professional blue suit standing next to his Bhojnalaya project.",
       "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
       "imageHint": "indian man suit"
     }
