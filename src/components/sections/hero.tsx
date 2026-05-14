@@ -12,12 +12,12 @@ export default function Hero() {
   const imgSrc = placeholder?.imageUrl || '';
 
   return (
-    <section id="home" className="relative w-full py-20 md:py-32 overflow-hidden bg-background">
+    <section id="home" className="relative w-full py-12 md:py-32 overflow-hidden bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
           {/* Intro Text */}
-          <div className="flex flex-col items-start space-y-6 animate-in fade-in slide-in-from-left duration-1000">
-            <div className="flex flex-wrap gap-2 mb-2">
+          <div className="flex flex-col items-center text-center md:items-start md:text-left space-y-6 order-2 md:order-1 animate-in fade-in slide-in-from-left duration-1000">
+            <div className="flex flex-wrap justify-center md:justify-start gap-2 mb-2">
               <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-primary/10 text-primary">
                 <User className="mr-1 h-3 w-3" />
                 CSE Student @ PCU
@@ -34,13 +34,13 @@ export default function Hero() {
               Passionate Computer Science student with expertise in full-stack web development, machine learning, and UI/UX. Smart India Hackathon 2025 Finalist.
             </p>
             <div className="flex flex-col gap-4 sm:flex-row w-full sm:w-auto">
-              <Button size="lg" asChild className="rounded-full px-8 shadow-md">
+              <Button size="lg" asChild className="rounded-full px-8 shadow-md w-full sm:w-auto">
                 <Link href="#projects">
                   <ArrowDown className="mr-2 h-5 w-5" />
                   View My Work
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" asChild className="rounded-full px-8 shadow-sm">
+              <Button size="lg" variant="outline" asChild className="rounded-full px-8 shadow-sm w-full sm:w-auto">
                 <a href={socialLinks.github} target="_blank" rel="noopener noreferrer">
                   <Github className="mr-2 h-5 w-5" />
                   GitHub Profile
@@ -49,9 +49,9 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Profile Image - Increased size by 30% */}
-          <div className="relative flex justify-center md:justify-center lg:pr-12 animate-in fade-in slide-in-from-right duration-1000">
-            <div className="relative aspect-square w-full max-w-[320px] overflow-hidden rounded-full shadow-2xl border-4 border-white/10 ring-8 ring-primary/5">
+          {/* Profile Image - Responsive positioning and size */}
+          <div className="relative flex justify-center order-1 md:order-2 lg:pr-12 animate-in fade-in slide-in-from-right duration-1000">
+            <div className="relative aspect-square w-full max-w-[280px] sm:max-w-[350px] md:max-w-[420px] overflow-hidden rounded-full shadow-2xl border-4 border-white/10 ring-8 ring-primary/5">
               <Image
                 src={imgSrc}
                 alt="Raj Kumar Profile"

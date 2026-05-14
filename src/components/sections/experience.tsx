@@ -1,6 +1,7 @@
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
 import { experiences } from '@/lib/data';
 import { Briefcase, GraduationCap, Trophy, Users } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
 export default function Experience() {
   return (
@@ -13,34 +14,46 @@ export default function Experience() {
           </p>
         </div>
 
-        <div className="relative mx-auto max-w-3xl">
-          <div className="absolute left-1/2 top-0 h-full w-0.5 -translate-x-1/2 bg-border"></div>
+        <div className="relative mx-auto max-w-4xl px-2">
+          {/* Vertical line - hidden on very small screens, shown as left border on mobile, middle on desktop */}
+          <div className="absolute left-8 md:left-1/2 top-0 h-full w-0.5 -translate-x-1/2 bg-border"></div>
           
-          {experiences.map((item, index) => (
-            <div key={index} className="relative mb-12">
-              <div className="flex items-center">
-                <div className={`flex-1 ${index % 2 === 0 ? 'pr-8 text-right' : 'pl-8 text-left'}`}>
-                  <Card className={`group transition-shadow duration-300 hover:shadow-lg ${index % 2 === 0 ? 'text-right' : 'text-left'}`}>
-                    <CardHeader>
-                      <CardTitle className="font-headline">{item.title}</CardTitle>
-                      <CardDescription className="font-semibold text-primary">{item.organization}</CardDescription>
-                      <CardDescription>{item.date}</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-muted-foreground">{item.description}</p>
-                    </CardContent>
-                  </Card>
+          <div className="space-y-12">
+            {experiences.map((item, index) => (
+              <div key={index} className={cn(
+                "relative flex flex-col md:flex-row items-start md:items-center",
+                index % 2 === 0 ? "md:flex-row-reverse" : ""
+              )}>
+                {/* Content Card */}
+                <div className="w-full md:w-1/2 pl-16 md:pl-0">
+                  <div className={cn(
+                    "w-full",
+                    index % 2 === 0 ? "md:pr-12 text-left md:text-right" : "md:pl-12 text-left"
+                  )}>
+                    <Card className="group transition-all duration-300 hover:shadow-xl hover:border-primary/20 bg-card/50 backdrop-blur-sm">
+                      <CardHeader className="p-5">
+                        <CardTitle className="text-xl font-headline">{item.title}</CardTitle>
+                        <CardDescription className="font-semibold text-primary">{item.organization}</CardDescription>
+                        <CardDescription className="text-xs">{item.date}</CardDescription>
+                      </CardHeader>
+                      <CardContent className="p-5 pt-0">
+                        <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </div>
+
+                {/* Timeline Icon */}
+                <div className="absolute left-8 md:left-1/2 top-6 md:top-1/2 -translate-y-1/2 -translate-x-1/2 z-10">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-background border-2 border-primary shadow-[0_0_15px_rgba(var(--primary),0.3)]">
+                    {item.type === 'Education' && <GraduationCap className="h-5 w-5 text-primary" />}
+                    {item.type === 'Award' && <Trophy className="h-5 w-5 text-primary" />}
+                    {item.type === 'Leadership' && <Users className="h-5 w-5 text-primary" />}
+                  </div>
                 </div>
               </div>
-              <div className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent border-2 border-accent-foreground/20">
-                  {item.type === 'Education' && <GraduationCap className="h-5 w-5 text-accent-foreground" />}
-                  {item.type === 'Award' && <Trophy className="h-5 w-5 text-accent-foreground" />}
-                  {item.type === 'Leadership' && <Users className="h-5 w-5 text-accent-foreground" />}
-                </div>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
