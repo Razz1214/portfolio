@@ -20,7 +20,7 @@ Once you have the ZIP file on your computer:
 1. **Extract the ZIP**: Unzip the downloaded file into a folder on your computer.
 2. **Open in VS Code**: Open that folder in Visual Studio Code.
 3. **Install Dependencies**:
-   Open your terminal in VS Code (`Ctrl + `` or `Cmd + ``) and run:
+   Open your terminal in VS Code (`Ctrl + ` or `Cmd + `) and run:
    ```bash
    npm install
    ```
@@ -40,4 +40,4 @@ Once you have the ZIP file on your computer:
 - `src/app`: Next.js App Router pages and layouts.
 - `src/components`: UI components (ShadCN).
 - `src/lib`: Data files and utility functions.
-- `src/firebase`: Firebase configuration and hooks.
+- `src/ai`: Genkit AI flows and configuration.
