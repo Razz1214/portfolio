@@ -1,4 +1,5 @@
-import { Code, Database, BrainCircuit, Bot, Laptop, Cpu, GitBranch, Linkedin, Github } from 'lucide-react';
+
+import { Code, Database, BrainCircuit, Bot, Laptop, Cpu, GitBranch, Linkedin, Github, Utensils } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
 export type Skill = {
@@ -27,11 +28,11 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: 'Portfolio Website',
-    description: 'My personal digital canvas to showcase my skills, projects, and journey as a software developer.',
-    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'GenAI'],
+    title: 'Bhojnalaya',
+    description: 'A comprehensive platform designed to enhance the campus dining experience with menu listings, online ordering, and digital bill generation.',
+    technologies: ['Next.js', 'Firebase', 'Tailwind CSS', 'Genkit'],
     imageId: 'project-1',
-    githubUrl: 'https://github.com/your-username/your-repo',
+    githubUrl: 'https://github.com/your-username/bhojnalaya',
     liveUrl: '#',
   },
   {
@@ -39,14 +40,14 @@ export const projects: Project[] = [
     description: 'A smart chatbot built using large language models to provide customer support and answer queries.',
     technologies: ['Python', 'LangChain', 'Genkit', 'Firebase'],
     imageId: 'project-2',
-    githubUrl: 'https://github.com/your-username/your-repo',
+    githubUrl: 'https://github.com/your-username/ai-assistant',
   },
   {
     title: 'Data Analysis Dashboard',
     description: 'A web application for visualizing and analyzing complex datasets with interactive charts and graphs.',
     technologies: ['React', 'Pandas', 'Recharts'],
     imageId: 'project-3',
-    githubUrl: 'https://github.com/your-username/your-repo',
+    githubUrl: 'https://github.com/your-username/data-dashboard',
     liveUrl: '#',
   },
 ];
