@@ -12,7 +12,8 @@ import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import { submitContactForm, ContactFormState } from '@/lib/actions';
 import { useToast } from '@/hooks/use-toast';
-import { Send, Loader2 } from 'lucide-react';
+import { Send, Loader2, Mail, Phone } from 'lucide-react';
+import { socialLinks } from '@/lib/data';
 
 const contactSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
@@ -70,14 +71,35 @@ export default function Contact() {
     <section id="contact" className="w-full py-20 md:py-32 bg-muted/40">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-12 md:grid-cols-2 md:gap-24">
-          <div className="space-y-4">
+          <div className="space-y-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">Get In Touch</h2>
             <p className="max-w-[600px] text-muted-foreground md:text-xl">
               I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of an amazing team. Feel free to reach out.
             </p>
-            <p className="text-muted-foreground">
-                You can also email me directly at <a href="mailto:raj.kumar@example.com" className="text-primary underline font-medium">raj.kumar@example.com</a>.
-            </p>
+            <div className="space-y-4 pt-4">
+                <div className="flex items-center gap-3">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
+                        <Mail className="h-5 w-5" />
+                    </div>
+                    <div>
+                        <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider">Email</p>
+                        <a href={`mailto:${socialLinks.email}`} className="text-lg font-semibold hover:text-primary transition-colors">
+                            {socialLinks.email}
+                        </a>
+                    </div>
+                </div>
+                <div className="flex items-center gap-3">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
+                        <Phone className="h-5 w-5" />
+                    </div>
+                    <div>
+                        <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider">Phone</p>
+                        <a href={`tel:+91${socialLinks.phone}`} className="text-lg font-semibold hover:text-primary transition-colors">
+                            +91 {socialLinks.phone}
+                        </a>
+                    </div>
+                </div>
+            </div>
           </div>
           <Card>
             <CardHeader>

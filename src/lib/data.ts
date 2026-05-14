@@ -115,6 +115,8 @@ export const socialLinks = {
   github: 'https://github.com',
   linkedin: 'https://linkedin.com/in',
   leetcode: 'https://leetcode.com',
+  email: 'kumarazz7549@gmail.com',
+  phone: '6204001281',
 };
 
 export const navLinks = [
