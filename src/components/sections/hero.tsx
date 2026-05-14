@@ -7,9 +7,18 @@ import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Github, ArrowDown, User } from 'lucide-react';
 import { socialLinks } from '@/lib/data';
+import { useState, useEffect } from 'react';
 
 export default function Hero() {
-  const profilePic = PlaceHolderImages.find((img) => img.id === 'profile-pic');
+  const placeholder = PlaceHolderImages.find((img) => img.id === 'profile-pic');
+  const [imgSrc, setImgSrc] = useState('/profile.jpg');
+
+  // If public/profile.jpg doesn't exist, it will fall back to the placeholder
+  useEffect(() => {
+    const img = new window.Image();
+    img.src = '/profile.jpg';
+    img.onerror = () => setImgSrc(placeholder?.imageUrl || '');
+  }, [placeholder]);
 
   return (
     <section id="home" className="relative w-full py-20 md:py-32 overflow-hidden bg-background">
@@ -24,7 +33,7 @@ export default function Hero() {
               Hi, I&apos;m <span className="text-primary">Raj Kumar</span>
             </h1>
             <p className="text-lg text-muted-foreground md:text-xl max-w-[600px] leading-relaxed">
-              Third-year B.Tech CSE student at Pimpri Chinchwad University. I am passionate about software engineering, building efficient solutions, and exploring the intersection of creative design and robust backend technologies.
+              Third-year B.Tech CSE student at Pimpri Chinchwad University. I am passionate about software engineering, building efficient solutions, and exploring the intersection of creative design and robust technologies.
             </p>
             <div className="flex flex-col gap-4 sm:flex-row w-full sm:w-auto">
               <Button size="lg" asChild className="rounded-full px-8 shadow-md">
@@ -43,16 +52,14 @@ export default function Hero() {
           </div>
           <div className="relative flex justify-center md:justify-end animate-in fade-in slide-in-from-right duration-1000">
             <div className="relative aspect-[4/5] w-full max-w-[420px] overflow-hidden rounded-2xl shadow-2xl border-4 border-white ring-8 ring-primary/5">
-              {profilePic && (
-                <Image
-                  src={profilePic.imageUrl}
-                  alt={profilePic.description}
-                  fill
-                  className="object-cover transition-transform duration-700 hover:scale-110"
-                  data-ai-hint={profilePic.imageHint}
-                  priority
-                />
-              )}
+              <Image
+                src={imgSrc}
+                alt="Raj Kumar Profile"
+                fill
+                className="object-cover transition-transform duration-700 hover:scale-110"
+                data-ai-hint={placeholder?.imageHint || 'man suit'}
+                priority
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
             </div>
           </div>
