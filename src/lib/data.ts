@@ -46,7 +46,7 @@ export const projects: Project[] = [
     description: 'A secure health record platform with dual-key access, teleconsultation, and data anonymization. Smart India Hackathon 2025 Finalist.',
     technologies: ['Full-Stack', 'Blockchain', 'Healthtech'],
     imageId: 'project-swasthya',
-    githubUrl: 'https://github.com/raj-kumar/swasthya',
+    githubUrl: 'https://github.com/Razz1214/SWASTHYA',
   },
   {
     title: 'Deepfake Detection System',
