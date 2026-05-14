@@ -53,14 +53,14 @@ export const projects: Project[] = [
     description: 'CNN-based model using TensorFlow and OpenCV to classify manipulated media with high precision and F1-score.',
     technologies: ['Python', 'TensorFlow', 'OpenCV', 'ML'],
     imageId: 'project-deepfake',
-    githubUrl: 'https://github.com/raj-kumar/deepfake-detection',
+    githubUrl: 'https://github.com/Razz1214/deepfake-detection-system',
   },
   {
     title: 'Bhojnalaya',
     description: 'QR-based billing system designed to prevent UPI fraud in campus dining. Winner of PCU Project Expo 2024.',
     technologies: ['HTML', 'CSS', 'JavaScript', 'QR APIs'],
     imageId: 'project-bhojnalaya',
-    githubUrl: 'https://github.com/raj-kumar/bhojnalaya',
+    githubUrl: 'https://github.com/Razz1214/Bhojanalaya',
   },
 ];
 
@@ -111,7 +111,7 @@ export const experiences: Experience[] = [
 ];
 
 export const socialLinks = {
-  github: 'https://github.com/raj-kumar',
+  github: 'https://github.com/Razz1214',
   linkedin: 'https://www.linkedin.com/in/raj-kumar-0b5013290/',
   leetcode: 'https://leetcode.com/raj-kumar',
   email: 'kumarazz7549@gmail.com',
