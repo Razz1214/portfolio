@@ -61,7 +61,6 @@ export const projects: Project[] = [
     technologies: ['HTML', 'CSS', 'JavaScript', 'QR APIs'],
     imageId: 'project-bhojnalaya',
     githubUrl: 'https://github.com/raj-kumar/bhojnalaya',
-    liveUrl: '#',
   },
 ];
 
@@ -112,9 +111,9 @@ export const experiences: Experience[] = [
 ];
 
 export const socialLinks = {
-  github: 'https://github.com',
+  github: 'https://github.com/raj-kumar',
   linkedin: 'https://www.linkedin.com/in/raj-kumar-0b5013290/',
-  leetcode: 'https://leetcode.com',
+  leetcode: 'https://leetcode.com/raj-kumar',
   email: 'kumarazz7549@gmail.com',
   phone: '6204001281',
 };

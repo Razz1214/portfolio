@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -46,17 +45,17 @@ export default function Projects() {
                 </CardContent>
                 <CardFooter className="flex justify-start gap-4">
                   <Button variant="outline" asChild>
-                    <Link href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                       <Github className="mr-2 h-4 w-4" />
                       GitHub
-                    </Link>
+                    </a>
                   </Button>
                   {project.liveUrl && (
                     <Button asChild>
-                      <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="mr-2 h-4 w-4" />
                         Live Demo
-                      </Link>
+                      </a>
                     </Button>
                   )}
                 </CardFooter>
