@@ -40,7 +40,8 @@ body {
   * {
     @apply border-border;
   }
-  body {
-    @apply bg-background text-foreground overflow-x-hidden w-full;
+  html, body {
+    @apply bg-background text-foreground overflow-x-hidden w-full max-w-full;
+    position: relative;
   }
 }
