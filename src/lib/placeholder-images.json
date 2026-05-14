@@ -21,8 +21,8 @@
     {
       "id": "profile-pic",
       "description": "Raj Kumar's professional profile picture.",
-      "imageUrl": "/profile.jpg",
-      "imageHint": "indian man suit"
+      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "professional man"
     }
   ]
 }
