@@ -48,12 +48,12 @@ export default function Hero() {
             </div>
           </div>
           <div className="relative flex justify-center md:justify-end animate-in fade-in slide-in-from-right duration-1000">
-            <div className="relative aspect-square w-full max-w-[300px] overflow-hidden rounded-full shadow-2xl border-4 border-white ring-8 ring-primary/5">
+            <div className="relative aspect-square w-full max-w-[280px] overflow-hidden rounded-full shadow-2xl border-4 border-white/10 ring-8 ring-primary/5">
               <Image
                 src={imgSrc}
                 alt="Raj Kumar Profile"
                 fill
-                className="object-cover transition-transform duration-700 hover:scale-110"
+                className="object-cover object-[25%_center] transition-transform duration-700 hover:scale-110"
                 data-ai-hint={placeholder?.imageHint || 'man suit'}
                 priority
                 unoptimized
