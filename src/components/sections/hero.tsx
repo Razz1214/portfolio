@@ -1,4 +1,3 @@
-
 'use client';
 
 import Image from 'next/image';
@@ -24,7 +23,7 @@ export default function Hero() {
               Hi, I&apos;m <span className="text-primary">Raj Kumar</span>
             </h1>
             <p className="text-lg text-muted-foreground md:text-xl max-w-[600px]">
-              A third-year B.Tech CSE student at Pimpri Chinchwad University. I specialize in building user-centric software like <span className="font-semibold text-foreground">Bhojnalaya</span>, blending creative design with robust backend solutions.
+              A third-year B.Tech CSE student at Pimpri Chinchwad University. I specialize in building user-centric software, blending creative design with robust backend solutions.
             </p>
             <div className="flex flex-col gap-4 sm:flex-row w-full sm:w-auto">
               <Button size="lg" asChild className="rounded-full px-8">
