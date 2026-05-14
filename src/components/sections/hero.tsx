@@ -1,4 +1,3 @@
-
 'use client';
 
 import Image from 'next/image';
@@ -11,14 +10,17 @@ import { useState, useEffect } from 'react';
 
 export default function Hero() {
   const placeholder = PlaceHolderImages.find((img) => img.id === 'profile-pic');
-  const [imgSrc, setImgSrc] = useState('/profile.jpg');
+  const [imgSrc, setImgSrc] = useState(placeholder?.imageUrl || '');
 
-  // If public/profile.jpg doesn't exist, it will fall back to the placeholder
+  // Attempt to use local profile.jpg if it exists, otherwise use placeholder
   useEffect(() => {
     const img = new window.Image();
     img.src = '/profile.jpg';
-    img.onerror = () => setImgSrc(placeholder?.imageUrl || '');
-  }, [placeholder]);
+    img.onload = () => setImgSrc('/profile.jpg');
+    img.onerror = () => {
+        // Fallback already set to placeholder in useState
+    };
+  }, []);
 
   return (
     <section id="home" className="relative w-full py-20 md:py-32 overflow-hidden bg-background">
@@ -52,14 +54,17 @@ export default function Hero() {
           </div>
           <div className="relative flex justify-center md:justify-end animate-in fade-in slide-in-from-right duration-1000">
             <div className="relative aspect-[4/5] w-full max-w-[420px] overflow-hidden rounded-2xl shadow-2xl border-4 border-white ring-8 ring-primary/5">
-              <Image
-                src={imgSrc}
-                alt="Raj Kumar Profile"
-                fill
-                className="object-cover transition-transform duration-700 hover:scale-110"
-                data-ai-hint={placeholder?.imageHint || 'man suit'}
-                priority
-              />
+              {imgSrc && (
+                <Image
+                  src={imgSrc}
+                  alt="Raj Kumar Profile"
+                  fill
+                  className="object-cover transition-transform duration-700 hover:scale-110"
+                  data-ai-hint={placeholder?.imageHint || 'man suit'}
+                  priority
+                  unoptimized={imgSrc.includes('drive.google.com')}
+                />
+              )}
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
             </div>
           </div>
