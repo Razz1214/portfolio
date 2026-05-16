@@ -1,43 +1,27 @@
-# Raj's Portfolio - Local Setup Guide
+# Raj Kumar Portfolio
 
-## 📥 HOW TO DOWNLOAD THIS PROJECT
-To download this entire project as a ZIP file from Firebase Studio:
-1. Look at the **File Explorer** on the left side of your screen.
-2. The **root folder** is the very first folder at the top of the list (it contains `src`, `package.json`, etc.).
-3. **Right-click** on that top-most folder.
-4. Select **Download**.
+This is my personal portfolio website built using Next.js and Tailwind CSS.
 
----
+## 🚀 Live Website
+https://portfolio-rouge-tau-46.vercel.app
 
-## 🚀 Local Setup Instructions
-Once you have the ZIP file on your computer:
+## 📌 Features
+- Responsive modern UI
+- Projects showcase
+- Skills section
+- Experience section
+- Contact section
+- Smooth animations
 
-### Prerequisites
-- [Node.js](https://nodejs.org/) (Version 18 or later)
-- [npm](https://www.npmjs.com/)
+## 🛠 Tech Stack
+- Next.js
+- React.js
+- Tailwind CSS
+- TypeScript
+- Framer Motion
 
-### Getting Started
-1. **Extract the ZIP**: Unzip the downloaded file into a folder on your computer.
-2. **Open in VS Code**: Open that folder in Visual Studio Code.
-3. **Install Dependencies**:
-   Open your terminal in VS Code (`Ctrl + ` or `Cmd + `) and run:
-   ```bash
-   npm install
-   ```
-4. **Environment Variables**:
-   Create a `.env.local` file in the root directory and add your Gemini API key:
-   ```
-   GOOGLE_GENAI_API_KEY=your_api_key_here
-   ```
-5. **Run the Development Server**:
-   ```bash
-   npm run dev
-   ```
-6. **View the App**:
-   Go to [http://localhost:3000](http://localhost:3000) in your browser.
+## 📂 Installation
 
-## Project Structure
-- `src/app`: Next.js App Router pages and layouts.
-- `src/components`: UI components (ShadCN).
-- `src/lib`: Data files and utility functions.
-- `src/ai`: Genkit AI flows and configuration.
+```bash
+npm install
+npm run dev
